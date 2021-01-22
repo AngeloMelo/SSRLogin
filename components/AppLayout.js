@@ -1,17 +1,19 @@
 import Head from 'next/head'
+import Navbar from './navbar'
 
-const Layout = (props) => (
+const AppLayout = (props) => (
 
     <div>
         <Head>
-            <title>Server Side Rendering test with Next.js</title>
+            <title>Server Side Rendering Authentication with JWT and Next.js</title>
             <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.css" />
         </Head>
 
+        <Navbar/>
         <div className="container">
             {props.children}
         </div>
     </div>
 )
 
-export default Layout
+export default AppLayout
